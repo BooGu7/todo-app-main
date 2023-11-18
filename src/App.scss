@@ -1,0 +1,23 @@
+.todo-app {
+  height: 100vh;
+  background: url(./assets/images/bg-desktop-light.jpg) 0 0 / 100% no-repeat;
+  // Box
+  .todo-app_container {
+    margin: auto;
+    padding-top: 20px;
+    border: 1px solid black;
+    width: 540px;
+  }
+  // HeaderTodo
+  .headerTodo {
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .headerTodo_title {
+      color: var(--neutral-very-light-gray);
+      letter-spacing: 10px;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,12 +1,14 @@
-import './App.css';
-import { HeaderTodo, TaskTodo, FooterTodo } from './components'
+import "./App.scss";
+import { HeaderTodo, TaskTodo, FooterTodo } from "./components";
 
 function App() {
   return (
-    <div className="todo-app bg-light">
-      <HeaderTodo />
-      <TaskTodo />
-      <FooterTodo />
+    <div className="todo-app bg-dark">
+      <div className="todo-app_container">
+        <HeaderTodo />
+        <TaskTodo />
+        <FooterTodo />
+      </div>
     </div>
   );
 }
