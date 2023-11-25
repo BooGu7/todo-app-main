@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -35,14 +35,26 @@
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .bg-light {
-  background-color: var(--neutral-very-light-gray);
+  background-color: var(--neutral-very-light-gray) !important;
 }
 .bg-dark {
-  background-color: var(--neutral-very-dark-blue);
+  background-color: var(--neutral-very-dark-blue) !important;
+}
+input[type="checkbox"] {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  border-style: none !important;
+  background-color: var(--neutral-very-light-gray) !important;
+}
+
+/* Hiển thị ô đánh dấu (check) khi được chọn */
+input[type="checkbox"]:checked {
+  background-color: var(--primary-check-background) !important;
 }

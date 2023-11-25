@@ -5,7 +5,6 @@
   .todo-app_container {
     margin: auto;
     padding-top: 20px;
-    border: 1px solid black;
     width: 540px;
   }
   // HeaderTodo
@@ -19,5 +18,97 @@
       letter-spacing: 10px;
       font-weight: 700;
     }
+    .headerTodo_toggle {
+      cursor: pointer;
+    }
+  }
+
+  // TaskTodo
+  .container-todo {
+    display: flex;
+    flex-direction: column;
+
+    // AddTodo
+    .addTodo {
+      height: 64px;
+      border-radius: 5px;
+      background-color: var(--neutral-very-light-gray);
+
+      display: flex;
+      justify-content: flex-start;
+
+      input[type="checkbox"] {
+        border-radius: 50% !important;
+      }
+
+      input.addTodo_checkbox {
+        margin: auto 21px;
+      }
+      input.addTodo_text {
+        width: 430px;
+        border-style: unset;
+
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 18px;
+        color: var(--neutral-very-dark-grayish-blue);
+      }
+      input.addTodo_text:focus-visible {
+        outline: unset;
+      }
+      margin-bottom: 20px;
+    }
+
+    // List Todo
+    .listTask_container {
+      overflow: hidden;
+      border-radius: 5px;
+      box-shadow: 1px 1px 20px var(--neutral-light-grayish-blue);
+      .listTask_container-item {
+        background-color: var(--neutral-very-light-gray);
+        height: 64px;
+        border-bottom: 1px solid var(--neutral-very-dark-grayish-blue);
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        input.listTask_checkbox {
+          margin: 0px 21px;
+          width: 20px;
+        }
+        .listTask_text {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 18px;
+          color: var(--neutral-very-dark-grayish-blue);
+        }
+      }
+      .listTask_status {
+        height: 50px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        font-size: small;
+        color: var(--neutral-very-dark-grayish-blue);
+        .listTask_status_list {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 10px;
+
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .footerTodo {
+    margin-top: 50px;
+
+    font-size: small;
+    color: var(--neutral-very-dark-grayish-blue);
+
+    display: flex;
+    justify-content: center;
   }
 }

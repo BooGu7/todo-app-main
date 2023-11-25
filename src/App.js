@@ -3,7 +3,7 @@ import { HeaderTodo, TaskTodo, FooterTodo } from "./components";
 
 function App() {
   return (
-    <div className="todo-app bg-dark">
+    <div className="todo-app bg-light">
       <div className="todo-app_container">
         <HeaderTodo />
         <TaskTodo />
